@@ -762,7 +762,7 @@
       grid-template-columns: 56px 1fr 56px;
       align-items: center;
       gap: 10px;
-      --perView: 5; /* ✅ 桌機一次顯示 5 張（像你截圖） */ 
+      --perView: 4; /* ✅ 桌機一次顯示 5 張（像你截圖） */ 
     }
 
     .kpi-carousel.multi .kpi-viewport{
@@ -829,18 +829,21 @@
       padding: 18px;
       border-left: 8px solid #667eea;
       box-shadow: 0 10px 24px rgba(0,0,0,.06);
+      width: 280px;
       cursor: default;
     }
     .kpi-carousel.multi .metric-item:hover{
-      transform: none;
-      background: #f7fafc;
-      box-shadow: 0 10px 24px rgba(0,0,0,.06);
+      transform: scale(1.05);
+      background: rgba(255,255,255,0.1);
+      box-shadow: 0 10px 24px rgba(0,0,0,0.1);
+      
+
     }
 
     /* 平板：3 張 */
     @media (max-width: 1024px){
       .kpi-carousel.multi{
-        --perView: 3;
+        --perView: 2;
         grid-template-columns: 52px 1fr 52px;
       }
       .kpi-arrow{ width: 52px; height: 52px; }
