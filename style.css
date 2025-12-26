@@ -26,6 +26,10 @@
       transform: 0.4s ease-out;
       border-radius: 17px;
       background-color: rgba(255, 255, 255, 0.1);
+     
+    }
+    .cc.nav-link{
+       color: #031a42;
     }
     .navbar.scrolled{ box-shadow: 0 6px 18px rgba(0,0,0,0.14); }
 
@@ -130,18 +134,32 @@
     }
     .subtitle{ font-size: 16px; color: rgba(255,255,255,.95); }
     .badge{
-      display:inline-block;
-      background: rgba(255,255,255,0.22);
+      display:inline-flex;
+      align-items: center;
+      background: rgba(255,255,255,0.25);
       border: 1px solid rgba(255,255,255,0.28);
       color:#fff;
-      padding: 8px 16px;
+      padding: 7px 16px;
       border-radius: 999px;
-      font-size: 13px;
+      font-size: 16px;
       font-weight: 700;
-      margin-top: 14px;
-      backdrop-filter: blur(10px);
+      margin-top: 20px;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.18);
+      backdrop-filter: blur(8px);
+      cursor: pointer;
+      animation: floatY 3.2s ease-in-out infinite;
+      transition: transform .15s ease, box-shadow .25s ease;
     }
-
+  
+    @keyframes floatY {
+      0%   { transform: translateY(0); }
+      50%  { transform: translateY(-10px); }
+      100% { transform: translateY(0); }
+    }
+    .badge:hover{
+      transform: translateY(-14px) scale(1.05);
+      box-shadow: 0 20px 40px rgba(0,0,0,.25);
+    }
     /* Section title */
     .section{ margin: 22px 0 34px; }
     .section-header{ margin: 0 0 12px; }
@@ -732,11 +750,7 @@
     }
 
     .team{ width: 500ps; margin-top: 20px; }
-    .badge:hover{
-      transform: scale(1.1);
-      box-shadow: 0 19px 35px rgba(102,126,234,.80);
-      filter: brightness(1.02);
-    }
+
     .tech-stack{ margin-top: 18px; }
 
     /* =========================================================
