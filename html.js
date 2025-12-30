@@ -10,7 +10,7 @@ function scrollToSection(id){
 function scrollToTop(){ window.scrollTo({ top: 0, behavior: "smooth" }); }
 
 function toggleBrandInfo(element){
-  document.querySelectorAll('.brand-card').forEach(card => {
+  document.querySelectorcatAll('.brand-card').forEach(card => {
     if(card !== element) card.classList.remove('active');
   });
   element.classList.toggle('active');
@@ -310,7 +310,7 @@ dashboard.render(document.getElementById("dashboardMount"))
     panel.style.display = "block";
     badge.style.display = "none";
     if(msgBox.childElementCount === 0){
-      addMessage(`喵！我是喵喵小幫手 <img src="./cat1.png" width="20" height="20" style="vertical-align:middle; margin:0 6px; border-radius:20%;"> 你想了解哪一部分？`, "bot");
+      addMessage(`喵！我是喵喵小幫手 <img src="convenuence_store/cat1.png" width="20" height="20" style="vertical-align:middle; margin:0 6px; border-radius:20%;"> 你想了解哪一部分？`, "bot");
     }
     setTimeout(()=> input.focus(), 0);
   }
@@ -600,5 +600,6 @@ window.MEOW_ANALYTICS = {
     }
   }, true);
 })();
+
 
 
