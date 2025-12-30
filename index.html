@@ -7,9 +7,9 @@
   <title>台灣便利商店儀表板</title>
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏪</text></svg>">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-  <link href="style.css" rel="stylesheet" type="text/css">
-  <link href="animate.css" rel="stylesheet">
-  <link href="animate.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <link href="css/animate.css" rel="stylesheet">
+  <link href="css/animate.min.css" rel="stylesheet">
 
 
   <!-- MongoDB Charts Embedding SDK -->
@@ -49,12 +49,13 @@
       <div class="header-content">
         <h1>台灣便利商店生態系大數據分析</h1>
         <p class="subtitle">基於 MongoDB Atlas Charts 的視覺化資料探索</p>
-        <span class="badge">喵喵資料派
-          <img src="cat1.png" width="25" height="25" style="vertical-align:middle; margin:0 6px; border-radius:20%;">
-        </span>
+        <button type="button" id="meowReminderBtn" class="badge badge-btn" data-toggle="meowReminderModal" data-target="#meowReminderModal">喵喵資料派
+          <img src="image/cat1.png" width="25" height="25" style="vertical-align:middle; margin:0 6px; border-radius:20%;">
+        </button>
       </div>
     </div>
   </header>
+
 
   <main class="container">
     <!-- Section: Stats -->
@@ -266,7 +267,7 @@
     <div class="bot-header">
       <div class="bot-title">
         <div class="bot-avatar animate__animated animate__animate__swing wow bs" >
-          <img src="cat1.png" width="25" height="25" style="padding: 5px;"  >
+          <img src="image/cat1.png" width="25" height="25" style="padding: 5px;" alt="cat" >
         </div>
         <div>
           <div class="bot-name">喵喵小幫手</div>
@@ -304,19 +305,17 @@
         <span class="tech-item">Animate</span>
       </div>
       <p class="team">&copy; 2025/12/25 製作者：資管二乙 喵喵資料派
-        <img src="cat1.png" width="25" height="25" style="vertical-align:middle; margin:0 6px">
+        <img src="image/cat1.png" width="25" height="25" style="vertical-align:middle; margin:0 6px">
       </p>
     </div>
   </footer>
 
 
 
-  <script src="html.js"></script> 
-  <script src="wow.min.js"></script> 
+  <script src="js/html.js"></script> 
+  <script src="js/wow.min.js"></script> 
   <script> 
     new WOW().init();
     </script> 
 </body>
 </html>
-
-
